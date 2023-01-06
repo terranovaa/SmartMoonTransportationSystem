@@ -60,7 +60,7 @@ static char regolith_topic[BUFFER_SIZE];
 static char sub_topic[BUFFER_SIZE];
 
 // application level buffers
-#define APP_BUFFER_SIZE 256
+#define APP_BUFFER_SIZE 128
 static char temp_buffer[APP_BUFFER_SIZE];
 static char dust_buffer[APP_BUFFER_SIZE];
 static char regolith_buffer[APP_BUFFER_SIZE];
@@ -140,6 +140,8 @@ static void publish(char* topic, char* buffer){
 	            return;
 	        }
 	        case MQTT_STATUS_OUT_QUEUE_FULL: {
+	            mqtt_disconnect(&conn);
+    		    state = STATE_DISCONNECTED;
 	            return;
 	        }
 	        default:
