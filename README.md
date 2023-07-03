@@ -10,6 +10,7 @@ A set of regolith transport solutions is turned into a set of smart transportati
 that can be used to monitor and control the extraction and transportation process
 while minimizing dust hazards, possible errors in the amount of regolith transported,
 and considering the typical moon’s temperature extreme conditions.
+<img width="686" alt="image" src="https://github.com/terranovaa/SmartMoonTransportationSystem/assets/61695945/93f7e236-e35f-4903-b931-68184c606adf">
 
 ## Project Structure
 The project is organized as follows:
