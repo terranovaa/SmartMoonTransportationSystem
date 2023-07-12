@@ -23,7 +23,7 @@ The project is organized as follows:
 - grafana/ contains the grafana dashboard
 - COOJA-simulation.csc is the Cooja simulation
 - SMTS_MySQL.sql is the SQL file that can be used to build the database
-
+  
 ## Requirements to run the project
 - Contiki-NG
 - Cooja simulator for the simulation
